@@ -21,7 +21,7 @@ func main() {
 	d := 5.1
 
 	fmt.Printf("x = %v, type of x = %T\n", x, x)
-	fmt.Printf("x = %v, type of x = %T\n", x, x)
+	fmt.Printf("y = %v, type of y = %T\n", y, y)
 	fmt.Printf("a = %v, type of a = %T\n", a, a)
 	fmt.Printf("b = %v, type of b = %T\n", b, b)
 	fmt.Printf("c = %v, type of c = %T\n", c, c)
