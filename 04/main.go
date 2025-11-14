@@ -17,6 +17,7 @@ func main() {
 		fmt.Printf("ch = %v, type: %T\n", ch, ch)
 	}
 
+	// slice
 	fmt.Println("Book[0:4] = ", book[0:4])
 	fmt.Println("Book[:5] = ", book[:5])
 	fmt.Println("Book[4:] = ", book[4:])
