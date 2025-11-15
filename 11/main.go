@@ -61,6 +61,6 @@ func main() {
 		return
 	}
 
-	fmt.Printf("Detailed Budget: %#v\n", newBudget)
+	fmt.Printf("Detailed Budget v2: %#v\n", newBudget)
 
 }
