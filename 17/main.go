@@ -60,4 +60,16 @@ func main() {
 		fmt.Printf("received: %d\n", receiver)
 	}
 
+	fmt.Println("---")
+
+	bch := make(chan int, 3) // buffered channel - in this case I can store 3 value
+	bch <- 100
+	bch <- 200
+	bch <- 300
+
+	for i := 0; i < 3; i++ {
+		bufferedReceiver := <-bch
+		fmt.Println("buffered channel received: ", bufferedReceiver)
+	}
+
 }
