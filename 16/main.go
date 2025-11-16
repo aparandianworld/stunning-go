@@ -81,7 +81,7 @@ func main() {
 	endTime := time.Now()
 	fmt.Println("Time duration (serial): ", endTime.Sub(startTime))
 
-	fmt.Println("---\n")
+	fmt.Println("---")
 
 	startTime = time.Now()
 	fetchURLsConcurrently(urls)
