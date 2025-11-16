@@ -1,0 +1,4 @@
+# config.toml - example configuration file
+
+Host = "localhost"
+Port = 8080
