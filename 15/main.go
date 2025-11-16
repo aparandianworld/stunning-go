@@ -36,10 +36,13 @@ func main() {
 
 }
 
-func safeAccess(values []int, index int) (int, error) {
-	if index < 0 || index >= len(values) {
-		return 0, errors.New("index out of bound")
-	}
+func safeAccess(values []int, index int) (n int, err error) {
+
+	defer func() {
+		if r := recover(); r != nil { // recover() is built-in function to capture error from panic
+			err = fmt.Errorf("%v", r) // convert panic to error instead of crashing the program
+		}
+	}()
 
 	return values[index], nil
 }
